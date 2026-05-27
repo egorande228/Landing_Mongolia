@@ -312,6 +312,10 @@ export const mongoliaContent: Record<MongoliaLocale, LocaleContent> = {
             body: "Start with an offer path that feels clear, quick, and easy to reach.",
             badge: "Welcome",
             imageSlotId: "home-welcome-offer",
+            cta: {
+              label: "claim 200$ bonus",
+              href: playerAccessHref,
+            },
           },
           {
             title: "Rewards and gifts",
@@ -319,7 +323,7 @@ export const mongoliaContent: Record<MongoliaLocale, LocaleContent> = {
             badge: "Rewards",
             imageSlotId: "home-gifts",
             cta: {
-              label: "claim 200$ bonus",
+              label: "claim now",
               href: playerAccessHref,
             },
           },
@@ -753,6 +757,10 @@ export const mongoliaContent: Record<MongoliaLocale, LocaleContent> = {
             body: "Ð¥ÑƒÑ€Ð´Ð°Ð½ Ð½ÑÑÐ³Ð´Ð´ÑÐ³, Ð¾Ð¹Ð»Ð³Ð¾Ð¼Ð¶Ñ‚Ð¾Ð¹, ÑÑ…Ð½Ð¸Ð¹ Ð°Ð»Ñ…Ð°Ð¼Ð´ Ñ‚Ð¾Ñ…Ð¸Ñ€ÑÐ¾Ð½ ÑÐ°Ð½Ð°Ð»Ñ‹Ð½ ÑƒÑ€ÑÐ³Ð°Ð»Ð°Ð°Ñ€ ÑÑ…ÑÐ».",
             badge: "Welcome",
             imageSlotId: "home-welcome-offer",
+            cta: {
+              label: "claim 200$ bonus",
+              href: playerAccessHref,
+            },
           },
           {
             title: "Ð¨Ð°Ð³Ð½Ð°Ð» Ð±Ð° Ð±ÑÐ»ÑÐ³",
@@ -760,7 +768,7 @@ export const mongoliaContent: Record<MongoliaLocale, LocaleContent> = {
             badge: "Rewards",
             imageSlotId: "home-gifts",
             cta: {
-              label: "claim 200$ bonus",
+              label: "claim now",
               href: playerAccessHref,
             },
           },
