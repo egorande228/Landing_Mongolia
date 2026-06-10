@@ -71,7 +71,6 @@ export type LocaleContent = {
       secondaryCta: Cta;
       highlights: Highlight[];
       metrics: Metric[];
-      imageSlotId: ImageSlotId;
     };
     games: {
       eyebrow: string;
@@ -102,7 +101,6 @@ export type LocaleContent = {
       body: string;
       primaryCta: Cta;
       secondaryCta: Cta;
-      imageSlotId: ImageSlotId;
       checklist: string[];
     };
   };
@@ -114,13 +112,11 @@ export type LocaleContent = {
       primaryCta: Cta;
       secondaryCta: Cta;
       metrics: Metric[];
-      imageSlotId: ImageSlotId;
     };
     benefits: {
       eyebrow: string;
       title: string;
       body: string;
-      imageSlotId: ImageSlotId;
       cards: Highlight[];
     };
     steps: {
@@ -139,7 +135,6 @@ export type LocaleContent = {
       eyebrow: string;
       title: string;
       body: string;
-      imageSlotId: ImageSlotId;
       toolPoints: string[];
       metrics: Metric[];
     };
@@ -149,7 +144,6 @@ export type LocaleContent = {
       body: string;
       primaryCta: Cta;
       secondaryCta: Cta;
-      imageSlotId: ImageSlotId;
       checklist: string[];
     };
   };
@@ -158,7 +152,6 @@ export type LocaleContent = {
       eyebrow: string;
       title: string;
       body: string;
-      imageSlotId: ImageSlotId;
     };
     playerTitle: string;
     partnershipTitle: string;
@@ -247,9 +240,7 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
           { value: "24/7", label: "support rhythm" },
           { value: "4", label: "player zones" },
           { value: "1", label: "fast mobile flow" },
-        ],
-        imageSlotId: "home-hero-stage",
-      },
+        ],      },
       games: {
         eyebrow: "Casino discovery",
         title: "Pick the pace that fits your next session.",
@@ -347,9 +338,7 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
           label: "Ask for support",
           href: "/faq#support",
           variant: "secondary",
-        },
-        imageSlotId: "home-final-cta",
-        checklist: [
+        },        checklist: [
           "Football and live boards",
           "Slots and live tables",
           "Support route when you need it",
@@ -374,15 +363,11 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
           { value: "2", label: "main routes" },
           { value: "3", label: "start steps" },
           { value: "1", label: "manager contact lane" },
-        ],
-        imageSlotId: "partnership-hero",
-      },
+        ],      },
       benefits: {
         eyebrow: "Why work with us",
         title: "Keep the route practical, supported, and easy to scale step by step.",
-        body: "The structure is built for promoters, community owners, and local operators who need clarity instead of noise.",
-        imageSlotId: "partnership-benefits",
-        cards: [
+        body: "The structure is built for promoters, community owners, and local operators who need clarity instead of noise.",        cards: [
           {
             title: "Clear partner path",
             body: "Use your audience, private code, and campaign rhythm without guessing the next move.",
@@ -472,9 +457,7 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
       tools: {
         eyebrow: "Tools and support",
         title: "Use the setup that helps you track, promote, and stay organized.",
-        body: "Keep dashboards, marketing materials, route guidance, and manager contact in one steady operating lane.",
-        imageSlotId: "partnership-tools",
-        toolPoints: [
+        body: "Keep dashboards, marketing materials, route guidance, and manager contact in one steady operating lane.",        toolPoints: [
           "Promo-code and campaign support",
           "Basic performance tracking",
           "Manager-led follow-up and route planning",
@@ -499,7 +482,6 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
           href: placeholderContactHrefs.telegram,
           variant: "secondary",
         },
-        imageSlotId: "partnership-final-cta",
         checklist: [
           "Partner and agent routes stay separate",
           "Manager-backed onboarding",
@@ -511,9 +493,7 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
       intro: {
         eyebrow: "Quick answers",
         title: "Read the basics before you play or apply.",
-        body: "The player path and the partnership path stay separate here, so you can move straight to the answers that match your goal.",
-        imageSlotId: "faq-support",
-      },
+        body: "The player path and the partnership path stay separate here, so you can move straight to the answers that match your goal.",      },
       playerTitle: "Player FAQ",
       partnershipTitle: "Partnership FAQ",
       playerItems: [
@@ -692,9 +672,7 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
           { value: "24/7", label: "Ð´ÑÐ¼Ð¶Ð»ÑÐ³Ð¸Ð¹Ð½ Ñ…ÑÐ¼Ð½ÑÐ»" },
           { value: "4", label: "Ñ‚Ð¾Ð³Ð»Ð¾Ð³Ñ‡Ð¸Ð¹Ð½ Ò¯Ð½Ð´ÑÑÐ½ Ð±Ò¯Ñ" },
           { value: "1", label: "Ñ…ÑƒÑ€Ð´Ð°Ð½ mobile ÑƒÑ€ÑÐ³Ð°Ð»" },
-        ],
-        imageSlotId: "home-hero-stage",
-      },
+        ],      },
       games: {
         eyebrow: "ÐšÐ°Ð·Ð¸Ð½Ð¾ Ð½ÑÑÐ»Ñ‚",
         title: "Ð”Ð°Ñ€Ð°Ð°Ð³Ð¸Ð¹Ð½ ÑÐµÑˆÐ½Ð´ÑÑ Ñ‚Ð¾Ñ…Ð¸Ñ€Ð¾Ñ… Ñ…ÑÐ¼Ð½ÑÐ»Ð¸Ð¹Ð³ ÑÐ¾Ð½Ð³Ð¾.",
@@ -792,9 +770,7 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
           label: "Ð¢ÑƒÑÐ»Ð°Ð¼Ð¶ Ð°Ð²Ð°Ñ…",
           href: "/faq#support",
           variant: "secondary",
-        },
-        imageSlotId: "home-final-cta",
-        checklist: [
+        },        checklist: [
           "Ð¥Ó©Ð»Ð±Ó©Ð¼Ð±Ó©Ð³ Ð±Ð° live board",
           "Ð¡Ð»Ð¾Ñ‚ Ð±Ð° Ð°Ð¼ÑŒÐ´ ÑˆÐ¸Ñ€ÑÑ",
           "Ð¥ÑÑ€ÑÐ³Ñ‚ÑÐ¹ Ò¯ÐµÐ´ÑÑ support route",
@@ -819,15 +795,11 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
           { value: "2", label: "Ò¯Ð½Ð´ÑÑÐ½ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚" },
           { value: "3", label: "ÑÑ…Ð»ÑÑ… Ð°Ð»Ñ…Ð°Ð¼" },
           { value: "1", label: "manager Ñ…Ð¾Ð»Ð±Ð¾Ð¾Ñ" },
-        ],
-        imageSlotId: "partnership-hero",
-      },
+        ],      },
       benefits: {
         eyebrow: "Ð¯Ð°Ð³Ð°Ð°Ð´ ÑÐ½Ñ Ð·Ð°Ð¼",
         title: "ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚Ð°Ð° Ð¿Ñ€Ð°ÐºÑ‚Ð¸Ðº, Ð´ÑÐ¼Ð¶Ð»ÑÐ³Ñ‚ÑÐ¹, Ð°Ð»Ñ…Ð°Ð¼ Ð°Ð»Ñ…Ð¼Ð°Ð°Ñ€ Ó©ÑÓ©Ñ…Ó©Ó©Ñ€ Ð±Ð°Ð¹Ð»Ð³Ð°.",
-        body: "Ð­Ð½Ñ Ð±Ò¯Ñ‚ÑÑ† Ð½ÑŒ ÑÑƒÑ€Ñ‚Ð°Ð»Ñ‡Ð»Ð°Ð³Ñ‡, community owner, Ð¾Ñ€Ð¾Ð½ Ð½ÑƒÑ‚Ð³Ð¸Ð¹Ð½ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‚ ÑˆÑƒÑƒÐ³Ð¸Ð°Ð½ Ð±Ð¸Ñˆ Ñ‚Ð¾Ð´Ð¾Ñ€Ñ…Ð¾Ð¹ Ð·Ð°Ð¼ Ó©Ð³Ó©Ñ…Ó©Ó©Ñ€ Ñ…Ð¸Ð¹Ð³Ð´ÑÑÐ½.",
-        imageSlotId: "partnership-benefits",
-        cards: [
+        body: "Ð­Ð½Ñ Ð±Ò¯Ñ‚ÑÑ† Ð½ÑŒ ÑÑƒÑ€Ñ‚Ð°Ð»Ñ‡Ð»Ð°Ð³Ñ‡, community owner, Ð¾Ñ€Ð¾Ð½ Ð½ÑƒÑ‚Ð³Ð¸Ð¹Ð½ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‚ ÑˆÑƒÑƒÐ³Ð¸Ð°Ð½ Ð±Ð¸Ñˆ Ñ‚Ð¾Ð´Ð¾Ñ€Ñ…Ð¾Ð¹ Ð·Ð°Ð¼ Ó©Ð³Ó©Ñ…Ó©Ó©Ñ€ Ñ…Ð¸Ð¹Ð³Ð´ÑÑÐ½.",        cards: [
           {
             title: "Ð¢Ð¾Ð´Ð¾Ñ€Ñ…Ð¾Ð¹ partner path",
             body: "ÐÑƒÐ´Ð¸Ñ‚Ð¾Ñ€Ð¸, Ñ…ÑƒÐ²Ð¸Ð¹Ð½ ÐºÐ¾Ð´, campaign-Ñ‹Ð½ Ñ…ÑÐ¼Ð½ÑÐ»ÑÑ Ð´Ð°Ñ€Ð°Ð°Ð³Ð¸Ð¹Ð½ Ð°Ð»Ñ…Ð¼Ð°Ð° Ñ‚Ð°Ð°Ñ…Ð³Ò¯Ð¹Ð³ÑÑÑ€ Ð°ÑˆÐ¸Ð³Ð»Ð°.",
@@ -917,9 +889,7 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
       tools: {
         eyebrow: "Ð¥ÑÑ€ÑÐ³ÑÑÐ» Ð±Ð° Ð´ÑÐ¼Ð¶Ð»ÑÐ³",
         title: "Tracking, promotion, organization-Ð¾Ð¾ Ð´ÑÐ¼Ð¶Ð¸Ñ… setup Ð°ÑˆÐ¸Ð³Ð»Ð°.",
-        body: "Dashboard, marketing material, route guidance, manager contact Ð±Ò¯Ð³Ð´ Ð½ÑÐ³ Ñ‚Ð¾Ð³Ñ‚Ð²Ð¾Ñ€Ñ‚Ð¾Ð¹ operating lane-Ð´ Ð±Ð°Ð¹Ð½Ð°.",
-        imageSlotId: "partnership-tools",
-        toolPoints: [
+        body: "Dashboard, marketing material, route guidance, manager contact Ð±Ò¯Ð³Ð´ Ð½ÑÐ³ Ñ‚Ð¾Ð³Ñ‚Ð²Ð¾Ñ€Ñ‚Ð¾Ð¹ operating lane-Ð´ Ð±Ð°Ð¹Ð½Ð°.",        toolPoints: [
           "Promo code Ð±Ð° campaign support",
           "Ð¡ÑƒÑƒÑ€ÑŒ performance tracking",
           "Manager-led follow-up Ð±Ð° route planning",
@@ -944,7 +914,6 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
           href: placeholderContactHrefs.telegram,
           variant: "secondary",
         },
-        imageSlotId: "partnership-final-cta",
         checklist: [
           "Partner Ð±Ð° agent route Ñ‚ÑƒÑÐ´Ð°Ð°",
           "Manager-Ñ‚Ð°Ð¹ onboarding",
@@ -956,9 +925,7 @@ const rawMongoliaContent: Record<MongoliaLocale, LocaleContent> = {
       intro: {
         eyebrow: "Ð¢Ð¾Ð²Ñ‡ Ñ…Ð°Ñ€Ð¸ÑƒÐ»Ñ‚",
         title: "Ð¢Ð¾Ð³Ð»Ð¾Ñ… ÑÑÐ²ÑÐ» Ñ…Ð°Ð¼Ñ‚Ñ€Ð°Ñ…Ñ‹Ð½ Ó©Ð¼Ð½Ó© ÑÑƒÑƒÑ€ÑŒ Ð¼ÑÐ´ÑÑÐ»Ð»ÑÑ ÑƒÐ½Ñˆ.",
-        body: "Ð¢Ð¾Ð³Ð»Ð¾Ð³Ñ‡Ð¸Ð¹Ð½ Ð·Ð°Ð¼, Ñ‚Ò¯Ð½ÑˆÐ»ÑÐ»Ð¸Ð¹Ð½ Ð·Ð°Ð¼ Ñ…Ð¾Ñ‘Ñ€Ñ‹Ð³ ÑÐ½Ð´ Ñ‚ÑƒÑÐ°Ð´ Ð½ÑŒ Ð±Ð°Ð¹Ñ€ÑˆÑƒÑƒÐ»ÑÐ°Ð½ Ñ‚ÑƒÐ» Ð·Ð¾Ñ€Ð¸Ð»Ð³Ð¾Ð´Ð¾Ð¾ Ñ‚Ð¾Ñ…Ð¸Ñ€ÑÐ¾Ð½ Ñ…Ð°Ñ€Ð¸ÑƒÐ»Ñ‚ Ñ€ÑƒÑƒ ÑˆÑƒÑƒÐ´ Ð¾Ñ€Ð¶ Ð±Ð¾Ð»Ð½Ð¾.",
-        imageSlotId: "faq-support",
-      },
+        body: "Ð¢Ð¾Ð³Ð»Ð¾Ð³Ñ‡Ð¸Ð¹Ð½ Ð·Ð°Ð¼, Ñ‚Ò¯Ð½ÑˆÐ»ÑÐ»Ð¸Ð¹Ð½ Ð·Ð°Ð¼ Ñ…Ð¾Ñ‘Ñ€Ñ‹Ð³ ÑÐ½Ð´ Ñ‚ÑƒÑÐ°Ð´ Ð½ÑŒ Ð±Ð°Ð¹Ñ€ÑˆÑƒÑƒÐ»ÑÐ°Ð½ Ñ‚ÑƒÐ» Ð·Ð¾Ñ€Ð¸Ð»Ð³Ð¾Ð´Ð¾Ð¾ Ñ‚Ð¾Ñ…Ð¸Ñ€ÑÐ¾Ð½ Ñ…Ð°Ñ€Ð¸ÑƒÐ»Ñ‚ Ñ€ÑƒÑƒ ÑˆÑƒÑƒÐ´ Ð¾Ñ€Ð¶ Ð±Ð¾Ð»Ð½Ð¾.",      },
       playerTitle: "Ð¢Ð¾Ð³Ð»Ð¾Ð³Ñ‡Ð¸Ð¹Ð½ FAQ",
       partnershipTitle: "Ð¢Ò¯Ð½ÑˆÐ»ÑÐ»Ð¸Ð¹Ð½ FAQ",
       playerItems: [

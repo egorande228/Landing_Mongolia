@@ -1,7 +1,6 @@
 import type { MongoliaLocale } from "../config/mongolia.globals";
 
 export type ImageSlotId =
-  | "home-hero-stage"
   | "home-casino-discovery"
   | "home-slots"
   | "home-live-games"
@@ -9,14 +8,8 @@ export type ImageSlotId =
   | "home-live-match"
   | "home-welcome-offer"
   | "home-gifts"
-  | "home-final-cta"
-  | "partnership-hero"
-  | "partnership-benefits"
-  | "partnership-tools"
   | "partnership-partner-route"
-  | "partnership-agent-route"
-  | "partnership-final-cta"
-  | "faq-support";
+  | "partnership-agent-route";
 
 export type ImageSlotDefinition = {
   id: ImageSlotId;
@@ -40,34 +33,10 @@ export type ImageSlotDefinition = {
 
 export const mongoliaImageSlots: ImageSlotDefinition[] = [
   {
-    id: "home-hero-stage",
-    page: "home",
-    section: "hero",
-    targetPath: "/player/hero/hero.png",
-    ratio: "16 / 10",
-    generatedSize: "1536x1024",
-    fit: "cover",
-    alt: {
-      en: "Premium Mongolia-themed sports and casino stage with warm gold lighting.",
-      mn: "Улаан, алтлаг өнгөтэй спорт ба казиноны тайз хэлбэрийн дүрслэл.",
-    },
-    mood: "Bold premium launch energy with stadium and casino depth.",
-    colorPalette: "Dark black-red base with controlled warm gold highlights.",
-    mongoliaCues: ["deep red lacquer", "gold flare", "steppe-night depth"],
-    cropSafety: "Keep hero subject centered with clean edges for responsive crops.",
-    textOverlaySafeZone: "Leave the left third quieter for headline overlap if reused.",
-    referenceContentDirection:
-      "Editorial hero stage for player discovery, not a literal app screenshot.",
-    prompt:
-      "Create a cinematic premium betting and casino hero scene for Mongolia. Use a dark ink-black and deep red environment with warm gold atmospheric glows, subtle stadium light beams, elegant gaming table reflections, and a sense of fast mobile access. Composition should feel polished, realistic or premium 3D, with one strong focal cluster and clean breathing room on the left side. No text, no logos, no UI labels.",
-    negativePrompt:
-      "no text, no brand logos, no cluttered collage, no cartoon look, no cropped faces at edges, no low-resolution blur, no flat red-yellow gradient background",
-  },
-  {
     id: "home-casino-discovery",
     page: "home",
     section: "games",
-    targetPath: "/player/games/casino.png",
+    targetPath: "/player/games/casino.webp",
     ratio: "4 / 3",
     generatedSize: "1024x1024",
     fit: "cover",
@@ -91,7 +60,7 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
     id: "home-slots",
     page: "home",
     section: "games",
-    targetPath: "/player/games/slots.png",
+    targetPath: "/player/games/slots.webp",
     ratio: "4 / 3",
     generatedSize: "1024x1024",
     fit: "cover",
@@ -115,7 +84,7 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
     id: "home-live-games",
     page: "home",
     section: "games",
-    targetPath: "/player/games/table.png",
+    targetPath: "/player/games/table.webp",
     ratio: "4 / 3",
     generatedSize: "1024x1024",
     fit: "cover",
@@ -139,7 +108,7 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
     id: "home-football",
     page: "home",
     section: "sports",
-    targetPath: "/player/sports/lead.png",
+    targetPath: "/player/sports/lead.webp",
     ratio: "5 / 6",
     generatedSize: "1024x1536",
     fit: "cover",
@@ -163,7 +132,7 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
     id: "home-live-match",
     page: "home",
     section: "sports",
-    targetPath: "/player/sports/football.png",
+    targetPath: "/player/sports/football.webp",
     ratio: "16 / 10",
     generatedSize: "1536x1024",
     fit: "cover",
@@ -187,7 +156,7 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
     id: "home-welcome-offer",
     page: "home",
     section: "offers",
-    targetPath: "/offer/welcome.png",
+    targetPath: "/offer/welcome.webp",
     ratio: "4 / 3",
     generatedSize: "1024x1024",
     fit: "contain",
@@ -211,7 +180,7 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
     id: "home-gifts",
     page: "home",
     section: "offers",
-    targetPath: "/offer/gifts.png",
+    targetPath: "/offer/gifts.webp",
     ratio: "4 / 3",
     generatedSize: "1024x1024",
     fit: "contain",
@@ -232,106 +201,10 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
       "no text, no brand logos, no giant numeric callouts, no toy-like props, no messy confetti overload",
   },
   {
-    id: "home-final-cta",
-    page: "home",
-    section: "final-cta",
-    targetPath: "/offer/mongolia-final-cta.png",
-    ratio: "16 / 10",
-    generatedSize: "1536x1024",
-    fit: "cover",
-    alt: {
-      en: "Mobile-first betting scene with gold glow and clean CTA space.",
-      mn: "Гар утасны төвтэй, CTA зайтай спорт-кaзино дүрслэл.",
-    },
-    mood: "Confident close with mobile immediacy.",
-    colorPalette: "Deep black-red with golden mobile highlights.",
-    mongoliaCues: ["premium mobile glow", "disciplined red lacquer frame"],
-    cropSafety: "Keep the device and hero object in the center third.",
-    textOverlaySafeZone: "Leave the left half clean for CTA copy.",
-    referenceContentDirection:
-      "Final player CTA visual with mobile access energy and overlay-safe composition.",
-    prompt:
-      "Create a wide premium final-CTA artwork for a Mongolia betting landing page. Focus on elegant mobile access, warm gold reflections, and a dark red-black premium atmosphere with clean space for copy on the left. No text, no logos, no fake interface labels.",
-    negativePrompt:
-      "no text, no logos, no cluttered UI, no cartoon devices, no harsh cyan lighting, no broken perspective",
-  },
-  {
-    id: "partnership-hero",
-    page: "partnership",
-    section: "hero",
-    targetPath: "/partnership/mongolia-partner-hero.png",
-    ratio: "16 / 10",
-    generatedSize: "1536x1024",
-    fit: "cover",
-    alt: {
-      en: "Partnership stage with operational trust and premium dashboard energy.",
-      mn: "Түншлэлийн итгэлцэл, ажиллагааны эрчтэй тайз хэлбэрийн дүрслэл.",
-    },
-    mood: "Operational confidence and growth.",
-    colorPalette: "Black-red base with focused gold dashboard light.",
-    mongoliaCues: ["measured gold signals", "serious premium depth"],
-    cropSafety: "Center the key stage objects and keep margins clean.",
-    textOverlaySafeZone: "Reserve the left side for hero copy.",
-    referenceContentDirection:
-      "Editorial partnership hero that communicates trust, tools, and growth.",
-    prompt:
-      "Generate a premium partnership hero artwork for a Mongolia market landing page. Convey operational trust, growth tools, and high-end support using a dark red-black environment with focused gold dashboard glows, elegant desk or board depth, and a clean editorial composition. No text or logos.",
-    negativePrompt:
-      "no text, no brand marks, no corporate stock-photo smiles, no low-end office look, no cluttered charts",
-  },
-  {
-    id: "partnership-benefits",
-    page: "partnership",
-    section: "benefits",
-    targetPath: "/partnership/tools.png",
-    ratio: "16 / 10",
-    generatedSize: "1536x1024",
-    fit: "cover",
-    alt: {
-      en: "Support-focused partnership visual with premium service cues.",
-      mn: "Түншийн дэмжлэг, үйлчилгээний уур амьсгалтай дүрслэл.",
-    },
-    mood: "Supportive, serious, and steady.",
-    colorPalette: "Dark maroon, graphite black, gold edges.",
-    mongoliaCues: ["service glow", "structured desk atmosphere"],
-    cropSafety: "Keep the focal service objects centered and unobstructed.",
-    textOverlaySafeZone: "Leave the right edge calmer for text overlays.",
-    referenceContentDirection:
-      "Benefit-side visual that suggests manager support, materials, and tracking.",
-    prompt:
-      "Create a premium support-and-benefits artwork for a Mongolia partnership page. Use a serious dark red and black base with elegant gold edges, polished workspace cues, and a trustworthy cinematic style that suggests guidance, materials, and performance tracking. No text or logos.",
-    negativePrompt:
-      "no text, no logos, no generic business handshake, no bright white office, no noisy composition",
-  },
-  {
-    id: "partnership-tools",
-    page: "partnership",
-    section: "tools",
-    targetPath: "/partnership/mongolia-tools.png",
-    ratio: "16 / 10",
-    generatedSize: "1536x1024",
-    fit: "cover",
-    alt: {
-      en: "Tools and dashboard style partnership visual with gold signal lighting.",
-      mn: "Алтлаг дохиололтой, хэрэгсэл ба хяналтын самбарын дүрслэл.",
-    },
-    mood: "Measured dashboard sophistication.",
-    colorPalette: "Dark red-black with controlled amber highlights.",
-    mongoliaCues: ["signal glow", "clean tool focus"],
-    cropSafety: "Keep the main dashboard or device centered with edge safety.",
-    textOverlaySafeZone: "Reserve the left half for supporting copy.",
-    referenceContentDirection:
-      "Tools showcase art that feels operational, not like a literal UI screenshot.",
-    prompt:
-      "Generate a premium tools-showcase artwork for a Mongolia partnership landing page. Suggest performance tracking, manager support, and marketing tools through elegant dashboard-like lighting, dark red-black surfaces, and warm gold details. Realistic or premium 3D style, no text or logos.",
-    negativePrompt:
-      "no text, no logos, no literal spreadsheet screenshot, no neon cyberpunk overload, no clutter",
-  },
-  {
     id: "partnership-partner-route",
     page: "partnership",
     section: "paths",
-    targetPath: "/partnership/partner.png",
+    targetPath: "/partnership/partner.webp",
     ratio: "16 / 10",
     generatedSize: "1536x1024",
     fit: "cover",
@@ -355,7 +228,7 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
     id: "partnership-agent-route",
     page: "partnership",
     section: "paths",
-    targetPath: "/partnership/agent.png",
+    targetPath: "/partnership/agent.webp",
     ratio: "16 / 10",
     generatedSize: "1536x1024",
     fit: "cover",
@@ -375,54 +248,6 @@ export const mongoliaImageSlots: ImageSlotDefinition[] = [
     negativePrompt:
       "no text, no logos, no money stacks cliché, no banking app screenshot, no cluttered crowd scene",
   },
-  {
-    id: "partnership-final-cta",
-    page: "partnership",
-    section: "final-cta",
-    targetPath: "/partnership/mongolia-final-cta.png",
-    ratio: "16 / 10",
-    generatedSize: "1536x1024",
-    fit: "cover",
-    alt: {
-      en: "Premium contact-oriented partnership close with warm gold glow.",
-      mn: "Алтлаг туяатай, холбоо барихад чиглэсэн түншлэлийн төгсгөлийн дүрслэл.",
-    },
-    mood: "Confident close and next-step clarity.",
-    colorPalette: "Dark red-black with strong gold focal glow.",
-    mongoliaCues: ["clear close", "premium communication energy"],
-    cropSafety: "Keep the central visual cluster away from the left copy zone.",
-    textOverlaySafeZone: "Leave the left half clean for CTA copy and buttons.",
-    referenceContentDirection:
-      "Final partnership CTA visual designed for contact and onboarding urgency.",
-    prompt:
-      "Create a premium final partnership CTA artwork for Mongolia with dark red-black depth, focused gold glow, and a strong sense of direct contact and next-step momentum. The composition should support overlay copy on the left and remain elegant, serious, and mobile-safe. No text or logos.",
-    negativePrompt:
-      "no text, no brand marks, no call center cliché, no bright white office scene, no crowded layout",
-  },
-  {
-    id: "faq-support",
-    page: "faq",
-    section: "support",
-    targetPath: "/support/mongolia-faq.png",
-    ratio: "16 / 10",
-    generatedSize: "1536x1024",
-    fit: "cover",
-    alt: {
-      en: "Support visual with premium calm lighting and clear help atmosphere.",
-      mn: "Тайван алтлаг гэрэлтэй, тусламжийн уур амьсгалтай дүрслэл.",
-    },
-    mood: "Calm support and clarity.",
-    colorPalette: "Muted dark red-black with soft gold warmth.",
-    mongoliaCues: ["calm signal glow", "structured premium support tone"],
-    cropSafety: "Keep the central support element broad and stable.",
-    textOverlaySafeZone: "Leave the left side open for support CTA copy.",
-    referenceContentDirection:
-      "FAQ support visual that feels reassuring and premium rather than promotional.",
-    prompt:
-      "Generate a premium support artwork for a Mongolia FAQ page. Use a dark red-black background, soft gold warmth, and a calm polished composition that communicates help, clarity, and fast support without embedded text or logos.",
-    negativePrompt:
-      "no text, no logos, no generic headset stock photo, no cluttered interfaces, no oversaturated neon",
-  },
 ];
 
 export const mongoliaImageSlotMap = Object.fromEntries(
@@ -432,7 +257,6 @@ export const mongoliaImageSlotMap = Object.fromEntries(
 export const getImageSlot = (id: ImageSlotId) => mongoliaImageSlotMap[id];
 
 const enabledImageSlots = new Set<ImageSlotId>([
-  "home-hero-stage",
   "home-casino-discovery",
   "home-slots",
   "home-live-games",
@@ -440,7 +264,6 @@ const enabledImageSlots = new Set<ImageSlotId>([
   "home-live-match",
   "home-welcome-offer",
   "home-gifts",
-  "partnership-benefits",
   "partnership-partner-route",
   "partnership-agent-route",
 ]);
