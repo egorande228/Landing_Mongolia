@@ -9,7 +9,7 @@ type CTAButtonProps = {
 };
 
 const isExternalHref = (href: string) =>
-  href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("tel:");
+  href.startsWith("http") || href.startsWith("/api/go/") || href.startsWith("mailto:") || href.startsWith("tel:");
 
 export function CTAButton({
   href,
@@ -29,8 +29,8 @@ export function CTAButton({
       <a
         className={sharedClassName}
         href={href}
-        rel="noreferrer"
-        target={href.startsWith("http") ? "_blank" : undefined}
+        rel={href.startsWith("/api/go/") ? "sponsored nofollow noopener" : "noreferrer"}
+        target={href.startsWith("http") || href.startsWith("/api/go/") ? "_blank" : undefined}
       >
         <span>{label}</span>
       </a>

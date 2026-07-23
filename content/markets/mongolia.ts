@@ -41,7 +41,7 @@ const placeholderContactHrefs = {
 } as const;
 
 export const playerAccessHref =
-  "https://refpa3665.com/L?tag=d_4092175m_66329c_MLBMongolia26";
+  "/api/go/casino";
 
 type FaqItem = {
   question: string;

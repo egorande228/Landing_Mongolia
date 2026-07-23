@@ -7,7 +7,7 @@ import { getLocalizedImageAsset } from "@/content/mongolia-image-slots";
 import type { LocaleContent } from "@/content/markets/mongolia";
 
 const sportsAccessHref =
-  "https://refpa3665.com/L?tag=d_4092175m_66329c_MongoliaSport";
+  "/api/go/sports";
 
 const sportsCardCtas = {
   "home-football": {
