@@ -11,7 +11,7 @@ export function HomeHero({ content }: HomeHeroProps) {
   return (
     <section className="section-shell hero-shell" id="top">
       <div className="shell-container">
-        <MotionCluster className="hero-grid hero-grid--centered" variant="up">
+        <MotionCluster className="hero-grid hero-grid--centered" variant="up" immediate>
           <div className="hero-copy hero-copy--centered">
             <div data-motion-item>
               <Eyebrow>{content.eyebrow}</Eyebrow>

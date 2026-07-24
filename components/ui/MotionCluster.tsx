@@ -18,19 +18,21 @@ type MotionClusterProps = {
   children: ReactNode;
   className?: string;
   variant?: "up" | "left" | "scale";
+  immediate?: boolean;
 };
 
 export function MotionCluster({
   children,
   className,
   variant = "up",
+  immediate = false,
 }: MotionClusterProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const node = ref.current;
 
-    if (!node || prefersReducedMotion()) {
+    if (!node || prefersReducedMotion() || immediate) {
       return;
     }
 
@@ -80,7 +82,7 @@ export function MotionCluster({
       },
       { rootMargin: "0px 0px -12% 0px" },
     );
-  }, [variant]);
+  }, [immediate, variant]);
 
   return <div className={cn(className)} ref={ref}>{children}</div>;
 }
